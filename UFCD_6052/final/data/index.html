@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>Minha Página com Marca d'Água</title>
+<style>
+  body {
+    /* imagem como marca d'água */
+    background-image: url('/watermark.png');
+    background-repeat: no-repeat;
+    background-position: center bottom; /* centralizado no fundo */
+    background-size: 150px auto; /* ajustar tamanho da imagem */
+    background-attachment: fixed; /* fixa no fundo da página */
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+  /* para que o conteúdo fique legível, pode adicionar um fundo branco semi-transparente */
+  .content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    min-height: 100vh;
+  }
+</style>
+</head>
+<body>
+  <div class="content">
+    <h1>Bem-vindo à minha página</h1>
+    <p>Conteúdo da página aqui...</p>
+  </div>
+</body>
+</html>
